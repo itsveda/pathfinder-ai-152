@@ -86,7 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Kindred is an AI learning companion that recommends courses, builds a personalized roadmap, and tracks your progress toward your career goals.",
       },
       { name: "author", content: "Kindred" },
-      { property: "og:title", content: "Kindred — Personalized course recommendations" },
+      { property: "og:title", content: "Kindred — AI course recommendations for your goals" },
       {
         property: "og:description",
         content:
@@ -94,6 +94,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Kindred — AI course recommendations for your goals" },
+      { name: "description", content: "AI-powered web app recommending personalized courses based on user profiles." },
+      { property: "og:description", content: "AI-powered web app recommending personalized courses based on user profiles." },
+      { name: "twitter:description", content: "AI-powered web app recommending personalized courses based on user profiles." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/550fbecd-59d6-4661-87ed-117c8071146d/id-preview-2cbe7c03--a17bf9c2-4008-4eb1-9867-077b38443a22.lovable.app-1782926708894.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/550fbecd-59d6-4661-87ed-117c8071146d/id-preview-2cbe7c03--a17bf9c2-4008-4eb1-9867-077b38443a22.lovable.app-1782926708894.png" },
     ],
     links: [
       {
