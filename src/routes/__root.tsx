@@ -79,27 +79,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Kindred — AI course recommendations for your goals" },
+      { title: "PathPilot — AI placement readiness & career guidance" },
       {
         name: "description",
         content:
-          "Kindred is an AI learning companion that recommends courses, builds a personalized roadmap, and tracks your progress toward your career goals.",
+          "PathPilot analyses your academic profile and predicts your campus placement readiness, with AI-personalised improvement plans and career roadmaps.",
       },
-      { name: "author", content: "Kindred" },
-      { property: "og:title", content: "Kindred — AI course recommendations for your goals" },
+      { name: "author", content: "PathPilot" },
+      { property: "og:title", content: "PathPilot — AI placement readiness & career guidance" },
       {
         property: "og:description",
         content:
-          "Tell Kindred your skills and goals; get a curated learning roadmap tailored to how you actually study.",
+          "Predict your placement readiness, spot the exact gaps, and follow a personalised roadmap to your dream company.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Kindred — AI course recommendations for your goals" },
-      { name: "description", content: "AI-powered web app recommending personalized courses based on user profiles." },
-      { property: "og:description", content: "AI-powered web app recommending personalized courses based on user profiles." },
-      { name: "twitter:description", content: "AI-powered web app recommending personalized courses based on user profiles." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/550fbecd-59d6-4661-87ed-117c8071146d/id-preview-2cbe7c03--a17bf9c2-4008-4eb1-9867-077b38443a22.lovable.app-1782926708894.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/550fbecd-59d6-4661-87ed-117c8071146d/id-preview-2cbe7c03--a17bf9c2-4008-4eb1-9867-077b38443a22.lovable.app-1782926708894.png" },
+      { name: "twitter:title", content: "PathPilot — AI placement readiness & career guidance" },
+      { name: "twitter:description", content: "Predict your placement readiness, spot gaps, and follow a personalised roadmap to your dream company." },
     ],
     links: [
       {
