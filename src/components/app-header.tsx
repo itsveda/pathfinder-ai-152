@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
-import { BookOpen, LogOut } from "lucide-react";
+import { GraduationCap, LogOut } from "lucide-react";
 import { useQueryClient } from "@tanstack/react-query";
 
 export function AppHeader({ authed = false }: { authed?: boolean }) {
@@ -20,9 +20,9 @@ export function AppHeader({ authed = false }: { authed?: boolean }) {
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="grid place-items-center h-9 w-9 rounded-full bg-primary/15 text-primary">
-            <BookOpen className="h-4 w-4" />
+            <GraduationCap className="h-4 w-4" />
           </span>
-          <span className="font-serif text-xl font-semibold tracking-tight">Kindred</span>
+          <span className="font-serif text-xl font-semibold tracking-tight">PathPilot</span>
         </Link>
         <nav className="flex items-center gap-2">
           {authed ? (
