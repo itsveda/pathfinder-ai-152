@@ -71,6 +71,126 @@ export type Database = {
         }
         Relationships: []
       }
+      placement_assessments: {
+        Row: {
+          category_scores: Json
+          created_at: string
+          gaps: string[]
+          id: string
+          predicted_companies: string[]
+          readiness_score: number
+          recommended_roles: Json
+          roadmap: Json
+          strengths: string[]
+          suggestions: Json
+          summary: string
+          user_id: string
+          verdict: string
+        }
+        Insert: {
+          category_scores: Json
+          created_at?: string
+          gaps?: string[]
+          id?: string
+          predicted_companies?: string[]
+          readiness_score: number
+          recommended_roles: Json
+          roadmap: Json
+          strengths?: string[]
+          suggestions: Json
+          summary: string
+          user_id: string
+          verdict: string
+        }
+        Update: {
+          category_scores?: Json
+          created_at?: string
+          gaps?: string[]
+          id?: string
+          predicted_companies?: string[]
+          readiness_score?: number
+          recommended_roles?: Json
+          roadmap?: Json
+          strengths?: string[]
+          suggestions?: Json
+          summary?: string
+          user_id?: string
+          verdict?: string
+        }
+        Relationships: []
+      }
+      placement_profiles: {
+        Row: {
+          backlogs: number | null
+          branch: string | null
+          certifications: string[] | null
+          cgpa: number | null
+          coding_platforms: string[] | null
+          created_at: string
+          degree: string | null
+          dream_companies: string | null
+          full_name: string | null
+          id: string
+          internships_count: number | null
+          onboarded: boolean
+          projects_count: number | null
+          soft_skills: string[] | null
+          target_roles: string[] | null
+          technical_skills: string[] | null
+          tenth_percent: number | null
+          twelfth_percent: number | null
+          updated_at: string
+          weekly_prep_hours: number | null
+          year_of_study: string | null
+        }
+        Insert: {
+          backlogs?: number | null
+          branch?: string | null
+          certifications?: string[] | null
+          cgpa?: number | null
+          coding_platforms?: string[] | null
+          created_at?: string
+          degree?: string | null
+          dream_companies?: string | null
+          full_name?: string | null
+          id: string
+          internships_count?: number | null
+          onboarded?: boolean
+          projects_count?: number | null
+          soft_skills?: string[] | null
+          target_roles?: string[] | null
+          technical_skills?: string[] | null
+          tenth_percent?: number | null
+          twelfth_percent?: number | null
+          updated_at?: string
+          weekly_prep_hours?: number | null
+          year_of_study?: string | null
+        }
+        Update: {
+          backlogs?: number | null
+          branch?: string | null
+          certifications?: string[] | null
+          cgpa?: number | null
+          coding_platforms?: string[] | null
+          created_at?: string
+          degree?: string | null
+          dream_companies?: string | null
+          full_name?: string | null
+          id?: string
+          internships_count?: number | null
+          onboarded?: boolean
+          projects_count?: number | null
+          soft_skills?: string[] | null
+          target_roles?: string[] | null
+          technical_skills?: string[] | null
+          tenth_percent?: number | null
+          twelfth_percent?: number | null
+          updated_at?: string
+          weekly_prep_hours?: number | null
+          year_of_study?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           career_goals: string | null
@@ -107,6 +227,30 @@ export type Database = {
           skills?: string[] | null
           updated_at?: string
           weekly_hours?: number | null
+        }
+        Relationships: []
+      }
+      roadmap_progress: {
+        Row: {
+          completed: boolean
+          id: string
+          task_key: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          completed?: boolean
+          id?: string
+          task_key: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          completed?: boolean
+          id?: string
+          task_key?: string
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
