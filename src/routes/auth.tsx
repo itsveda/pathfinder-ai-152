@@ -8,13 +8,13 @@ import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { toast } from "sonner";
-import { BookOpen } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in — Kindred" },
-      { name: "description", content: "Sign in or create your Kindred account to get personalized course recommendations." },
+      { title: "Sign in — PathPilot" },
+      { name: "description", content: "Sign in or create a PathPilot account to get your AI placement readiness score and career roadmap." },
     ],
   }),
   component: AuthPage,
@@ -78,9 +78,9 @@ function AuthPage() {
       <div className="w-full max-w-md">
         <Link to="/" className="flex items-center gap-2 justify-center mb-8">
           <span className="grid place-items-center h-9 w-9 rounded-full bg-primary/15 text-primary">
-            <BookOpen className="h-4 w-4" />
+            <GraduationCap className="h-4 w-4" />
           </span>
-          <span className="font-serif text-xl font-semibold">Kindred</span>
+          <span className="font-serif text-xl font-semibold">PathPilot</span>
         </Link>
         <Card className="p-6 border-border/70 shadow-[var(--shadow-soft)]">
           <Tabs value={tab} onValueChange={(v) => setTab(v as "signin" | "signup")}>
